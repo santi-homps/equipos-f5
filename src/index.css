@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply m-0;
+  }
+
+  h1,
+  h2 {
+    @apply font-medium text-gray-900 dark:text-gray-100;
+  }
+
+  h1 {
+    @apply text-5xl md:text-3xl my-8 -tracking-wide;
+  }
+
+  h2 {
+    @apply text-2xl md:text-xl mb-2 -tracking-wide;
+  }
+
+  p {
+    @apply m-0;
+  }
+
+  code {
+    @apply inline-flex font-mono rounded px-2 py-1 text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-800 text-sm;
+  }
+}
+
+#root {
+  @apply max-w-7xl mx-auto min-h-screen flex flex-col border-x border-gray-200 dark:border-gray-700;
+}

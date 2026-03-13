@@ -1,0 +1,146 @@
+/* Custom Styles - Override and Extend Tailwind CSS */
+
+/* Form Container Styles */
+.form-container {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-full;
+}
+
+.form-title {
+  @apply text-center text-2xl font-bold mb-6 text-gray-900 dark:text-white;
+}
+
+.toggle-button {
+  @apply px-6 py-2 rounded-md font-medium transition;
+}
+
+.toggle-button.active {
+  @apply bg-blue-600 text-white;
+}
+
+.toggle-button.inactive {
+  @apply bg-gray-300 text-gray-700 hover:bg-gray-400;
+}
+
+/* Input Styles */
+.input-field {
+  @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Button Styles */
+.submit-button {
+  @apply flex items-center justify-center gap-2 py-2 px-8 rounded-md font-medium transition;
+}
+
+.submit-button.enabled {
+  @apply bg-blue-600 hover:bg-blue-700 text-white cursor-pointer;
+}
+
+.submit-button.disabled {
+  @apply bg-gray-400 text-gray-200 cursor-not-allowed;
+}
+
+.reset-button {
+  @apply py-2 px-8 rounded-md font-medium bg-red-600 hover:bg-red-700 text-white cursor-pointer transition;
+}
+
+/* Pool Selection Styles */
+.pool-container {
+  @apply bg-gray-100 dark:bg-gray-700 rounded-lg p-4 max-h-96 overflow-y-auto;
+}
+
+.pool-title {
+  @apply font-bold text-gray-900 dark:text-white mb-4 text-center;
+}
+
+.player-chip {
+  @apply px-3 py-2 rounded-md text-sm transition font-medium whitespace-nowrap;
+}
+
+.player-chip.available {
+  @apply bg-white dark:bg-gray-600 hover:bg-blue-100 dark:hover:bg-blue-900 text-gray-900 dark:text-white;
+}
+
+.player-chip.selected {
+  @apply bg-blue-500 hover:bg-blue-600 text-white w-fit;
+}
+
+/* Soccer Field Styles */
+.soccer-field-container {
+  @apply bg-green-600 rounded-lg shadow-lg p-8 w-full border-4 border-white relative;
+}
+
+.soccer-field-pitch {
+  @apply relative bg-gradient-to-b from-green-500 to-green-600 rounded-lg p-8 border-4 border-white;
+}
+
+.field-line {
+  @apply absolute bg-white;
+}
+
+.center-line {
+  @apply left-1/2 top-0 bottom-0 w-1 transform -translate-x-1/2;
+}
+
+.center-circle {
+  @apply absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-4 border-white rounded-full;
+}
+
+.center-spot {
+  @apply absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-white rounded-full;
+}
+
+.goal-area {
+  @apply absolute top-1/4 w-16 h-1/2 border-4 border-white;
+}
+
+.goal-area.left {
+  @apply left-0 rounded-r-lg;
+}
+
+.goal-area.right {
+  @apply right-0 rounded-l-lg;
+}
+
+/* Team Styles */
+.team-section {
+  @apply space-y-2;
+}
+
+.team-title {
+  @apply font-bold text-center mb-4 drop-shadow-lg;
+}
+
+.team-1-title {
+  @apply team-title text-white;
+}
+
+.team-2-title {
+  @apply team-title text-black;
+}
+
+.player-card {
+  @apply rounded-lg px-3 py-2 text-sm font-semibold text-center shadow-lg transform hover:scale-105 transition;
+}
+
+.player-card.team-1 {
+  @apply bg-black text-white;
+}
+
+.player-card.team-2 {
+  @apply bg-white text-black;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .form-title {
+    @apply text-xl;
+  }
+
+  .toggle-button {
+    @apply px-4 py-1 text-sm;
+  }
+
+  .player-chip {
+    @apply px-2 py-1 text-xs;
+  }
+}
