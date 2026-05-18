@@ -244,8 +244,8 @@ const isSelectionFull = selectedPlayers.length >= 10;
             <div className="grid grid-cols-2 gap-8 relative z-10">
               {/* First Team - Left Side */}
               <div className="space-y-2 flex flex-col items-center justify-center">
-                <h3 className="font-bold text-white text-center mb-4 drop-shadow-lg">
-                  EQUIPO 1
+                <h3 className="font-bold text-black text-center mb-4 drop-shadow-lg">
+                  NEGRO
                 </h3>
                 {firstList.map((value, index) => (
                   <div
@@ -259,8 +259,8 @@ const isSelectionFull = selectedPlayers.length >= 10;
 
               {/* Second Team - Right Side */}
               <div className="space-y-2 flex flex-col items-center justify-center">
-                <h3 className="font-bold text-black text-center mb-4 drop-shadow-lg">
-                  EQUIPO 2
+                <h3 className="font-bold text-white text-center mb-4 drop-shadow-lg">
+                  BLANCO
                 </h3>
                 {secondList.map((value, index) => (
                   <div
